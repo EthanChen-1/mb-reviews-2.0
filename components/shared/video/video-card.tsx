@@ -19,7 +19,7 @@ export default function VideoCard({ video }: { video: any }) {
           />
         </a>
       </CardHeader>
-      <CardContent className="p-4 grid gap-4">
+      <CardContent className="p-2 grid gap-4">
         <a
           href={`https://www.youtube.com/watch?v=${video.resourceId.videoId}`}
           target="_blank"
