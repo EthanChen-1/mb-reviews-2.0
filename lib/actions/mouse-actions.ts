@@ -11,3 +11,10 @@ export async function getMouseRankings() {
 
   return convertToPlainObject(data);
 }
+
+export async function getMouseByID(id: string) {
+  const data = await prisma.mouse.findFirst({
+    where: { id: id },
+  });
+  return convertToPlainObject(data);
+}
