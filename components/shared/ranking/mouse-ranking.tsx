@@ -13,7 +13,7 @@ export default function MouseRanking({ data }: { data: Mouse[] }) {
             return (
               <li key={mouse.id} className="text-lg text-yellow-500">
                 <div className="flex">
-                  <Link href={`/mouse/${mouse.id}`}>
+                  <Link href={`/mouse/${mouse.slug}`}>
                     {mouse.company + " " + mouse.name}
                   </Link>
                   <Crown className="ml-1 place-self-center" />
@@ -23,7 +23,7 @@ export default function MouseRanking({ data }: { data: Mouse[] }) {
           } else if (mouse.rank === 2) {
             return (
               <li key={mouse.id} className="text-lg text-neutral-500">
-                <Link href={`/mouse/${mouse.id}`}>
+                <Link href={`/mouse/${mouse.slug}`}>
                   {mouse.company + " " + mouse.name}
                 </Link>
               </li>
@@ -31,7 +31,7 @@ export default function MouseRanking({ data }: { data: Mouse[] }) {
           } else if (mouse.rank === 3) {
             return (
               <li key={mouse.id} className="text-lg text-orange-800">
-                <Link href={`/mouse/${mouse.id}`}>
+                <Link href={`/mouse/${mouse.slug}`}>
                   {mouse.company + " " + mouse.name}
                 </Link>
               </li>
@@ -39,7 +39,7 @@ export default function MouseRanking({ data }: { data: Mouse[] }) {
           }
           return (
             <li key={mouse.id} className="text-sm">
-              <Link href={`/mouse/${mouse.id}`}>
+              <Link href={`/mouse/${mouse.slug}`}>
                 {mouse.company + " " + mouse.name}
               </Link>
             </li>

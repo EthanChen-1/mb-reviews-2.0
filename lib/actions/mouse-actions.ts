@@ -12,10 +12,9 @@ export async function getMouseRankings() {
   return convertToPlainObject(data);
 }
 
-export async function getMouseByID(mouseId: string) {
+export async function getMouseBySlug(slug: string) {
   const data = await prisma.mouse.findFirst({
-    where: { id: mouseId },
+    where: { slug: slug },
   });
-  console.log(data);
   return convertToPlainObject(data);
 }

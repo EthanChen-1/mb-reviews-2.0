@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Mouse" ALTER COLUMN "slug" DROP DEFAULT;
