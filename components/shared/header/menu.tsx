@@ -16,7 +16,7 @@ export default function Menu() {
     <div className="flex justify-end gap-3">
       <nav className="hidden md:flex w-full max-w-xs gap-1">
         <Button asChild variant="ghost">
-          <Link href="/mouse-ranking">Mouse Rankings</Link>
+          <Link href="/mouse-reviews">Mouse Reviews</Link>
         </Button>
         <ModeToggle />
         <Button asChild>
