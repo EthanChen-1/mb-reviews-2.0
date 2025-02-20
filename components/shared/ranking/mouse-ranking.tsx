@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Crown } from "lucide-react";
 import { Mouse } from "@/types";
 
@@ -12,7 +13,9 @@ export default function MouseRanking({ data }: { data: Mouse[] }) {
             return (
               <li key={mouse.id} className="text-lg text-yellow-500">
                 <div className="flex">
-                  <p>{mouse.company + " " + mouse.name}</p>
+                  <Link href={`/mouse/${mouse.id}`}>
+                    {mouse.company + " " + mouse.name}
+                  </Link>
                   <Crown className="ml-1 place-self-center" />
                 </div>
               </li>
@@ -20,19 +23,25 @@ export default function MouseRanking({ data }: { data: Mouse[] }) {
           } else if (mouse.rank === 2) {
             return (
               <li key={mouse.id} className="text-lg text-neutral-500">
-                <p>{mouse.company + " " + mouse.name}</p>
+                <Link href={`/mouse/${mouse.id}`}>
+                  {mouse.company + " " + mouse.name}
+                </Link>
               </li>
             );
           } else if (mouse.rank === 3) {
             return (
               <li key={mouse.id} className="text-lg text-orange-800">
-                <p>{mouse.company + " " + mouse.name}</p>
+                <Link href={`/mouse/${mouse.id}`}>
+                  {mouse.company + " " + mouse.name}
+                </Link>
               </li>
             );
           }
           return (
             <li key={mouse.id} className="text-sm">
-              {mouse.company + " " + mouse.name}
+              <Link href={`/mouse/${mouse.id}`}>
+                {mouse.company + " " + mouse.name}
+              </Link>
             </li>
           );
         })}
