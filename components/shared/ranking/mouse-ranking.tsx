@@ -6,7 +6,7 @@ import { Mouse } from "@/types";
 export default function MouseRanking({ data }: { data: Mouse[] }) {
   return (
     <div>
-      <h2 className="h2-bold">Mouse Ranking</h2>
+      <h2 className="h2-bold mb-4">Mouse Ranking</h2>
       <ol className="list-decimal pl-4">
         {data.map((mouse: Mouse) => {
           if (mouse.rank === 1) {
