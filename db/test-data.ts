@@ -1,3 +1,15 @@
+import {
+  TEST_ADMIN_EMAIL,
+  TEST_ADMIN_NAME,
+  TEST_ADMIN_PASSWORD,
+  TEST_ADMIN_ROLE,
+  TEST_USER_EMAIL,
+  TEST_USER_NAME,
+  TEST_USER_PASSWORD,
+  TEST_USER_ROLE,
+} from "@/lib/constants";
+import { hashSync } from "bcrypt-ts-edge";
+
 export const testData = {
   kind: "youtube#playlistItemListResponse",
   etag: "9qXiJSqjcx-3uwbLR58YlJ2NKJo",
@@ -397,3 +409,47 @@ export const testData = {
     resultsPerPage: 8,
   },
 };
+
+export const userTestData = [
+  {
+    name: TEST_ADMIN_NAME,
+    email: TEST_ADMIN_EMAIL,
+    password: hashSync(TEST_ADMIN_PASSWORD, 10),
+    role: TEST_ADMIN_ROLE,
+  },
+  {
+    name: TEST_USER_NAME,
+    email: TEST_USER_EMAIL,
+    password: hashSync(TEST_USER_PASSWORD, 10),
+    role: TEST_USER_ROLE,
+  },
+];
+
+export const mouseTestData = [
+  { name: "Maya X", company: "Lamzu", rank: 2, slug: "lamzu-maya-x" },
+  {
+    name: "XM2 8K",
+    company: "EndGame Gear",
+    rank: 3,
+    slug: "endgamegear-xm2-8k",
+  },
+  {
+    name: "OP1 8K",
+    company: "EndGame Gear",
+    rank: 1,
+    slug: "endgamegear-op1-8k",
+  },
+  {
+    name: "DeathAdder V3 Pro",
+    company: "Razer",
+    rank: 5,
+    slug: "razer-deathadder-v3-pro",
+  },
+  { name: "X2H", company: "Pulsar", rank: 4, slug: "pulsar-x2h" },
+  {
+    name: "Viper Mini",
+    company: "Razer",
+    rank: 6,
+    slug: "razer-viper-mini",
+  },
+];
