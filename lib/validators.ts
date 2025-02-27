@@ -6,3 +6,8 @@ export const insertMouseSchema = z.object({
   company: z.string().min(1, "Company must be at least 1 character"),
   rank: z.coerce.number(),
 });
+
+export const signInFormSchema = z.object({
+  email: z.string().email("Invalid Email Address"),
+  password: z.string().min(6, "Password must be at least 6 characters"),
+});

@@ -14,3 +14,7 @@ export const TEST_USER_NAME = process.env.TEST_USER_NAME || "";
 export const TEST_USER_EMAIL = process.env.TEST_USER_EMAIL || "";
 export const TEST_USER_PASSWORD = process.env.TEST_USER_PASSWORD || "";
 export const TEST_USER_ROLE = process.env.TEST_USER_ROLE || "";
+export const signInDefaultValues = {
+  email: "",
+  password: "",
+};
