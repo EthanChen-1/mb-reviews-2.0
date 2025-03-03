@@ -9,12 +9,12 @@ datasource db {
 }
 
 model Mouse {
-  id          String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
-  name        String
-  slug        String @unique(map: "mouse_slug_idx")
-  company     String
-  description String @default("") @db.Text
-  rank        Int
+  id      String @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  name    String
+  slug    String @unique(map: "mouse_slug_idx")
+  company String
+  quote   String @default("") @db.Text
+  rank    Int
 }
 
 model User {
