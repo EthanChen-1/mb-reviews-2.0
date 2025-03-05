@@ -32,7 +32,7 @@ export default async function MouseDetailsPage(props: {
               <h1 className="h3-bold">{mouse.name}</h1>
               <div className="flex">
                 <p>Mausbert Rank: {mouse.rank} </p>
-                {mouse.rank === 1 ? (
+                {mouse.rank === "S" ? (
                   <Crown className="ml-2 self-center text-yellow-500" />
                 ) : (
                   <></>
