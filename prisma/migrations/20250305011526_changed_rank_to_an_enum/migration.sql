@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Mouse" ALTER COLUMN "rank" SET DATA TYPE TEXT;

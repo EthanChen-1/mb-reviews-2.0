@@ -14,7 +14,7 @@ model Mouse {
   slug    String @unique(map: "mouse_slug_idx")
   company String
   quote   String @default("") @db.Text
-  rank    Int
+  rank    String
 }
 
 model User {

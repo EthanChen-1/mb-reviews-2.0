@@ -17,7 +17,7 @@ export default function Menu() {
     <div className="flex justify-end gap-3">
       <nav className="hidden md:flex w-full max-w-xs gap-1">
         <Button asChild variant="ghost">
-          <Link href="/mouse-reviews">Mouse Reviews</Link>
+          <Link href="/mouse-ranking">Mouse Ranking</Link>
         </Button>
         <ModeToggle />
         <UserButton />
@@ -30,6 +30,9 @@ export default function Menu() {
           <SheetContent className="flex flex-col items-start">
             <SheetTitle>Menu</SheetTitle>
             <ModeToggle />
+            <Button asChild variant="ghost">
+              <Link href="/mouse-ranking">Mouse Ranking</Link>
+            </Button>
             <UserButton />
             <SheetDescription></SheetDescription>
           </SheetContent>

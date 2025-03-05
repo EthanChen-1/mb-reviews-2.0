@@ -38,7 +38,9 @@ export default async function MouseDetailsPage(props: {
                   <></>
                 )}
               </div>
-              <p>&quot;{mouse.quote}&quot; - Mausbert Reviews</p>
+              <p className="leading-8">
+                &quot;{mouse.quote}&quot; - Mausbert Reviews
+              </p>
             </div>
           </div>
           <div className="col-span-1"></div>

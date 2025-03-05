@@ -429,7 +429,7 @@ export const mouseTestData = [
   {
     name: "Maya X",
     company: "Lamzu",
-    rank: 2,
+    rank: "S",
     slug: "lamzu-maya-x",
     quote:
       "The Maya X redefines the large mouse market with a shape designed for all hands sizes",
@@ -437,21 +437,21 @@ export const mouseTestData = [
   {
     name: "XM2 8K",
     company: "EndGame Gear",
-    rank: 3,
+    rank: "A",
     slug: "endgamegear-xm2-8k",
     quote: "The XM2 8K raises the bar for all wired claw grip mice",
   },
   {
     name: "OP1 8K",
     company: "EndGame Gear",
-    rank: 1,
+    rank: "S",
     slug: "endgamegear-op1-8k",
     quote: "The OP1 8K is proof that wired mice can compete with wireless",
   },
   {
     name: "DeathAdder V3 Pro",
     company: "Razer",
-    rank: 5,
+    rank: "B",
     slug: "razer-deathadder-v3-pro",
     quote:
       "The DeathAdder V3 Pro stands out for its simplicity and ergonomic design",
@@ -459,14 +459,14 @@ export const mouseTestData = [
   {
     name: "X2H",
     company: "Pulsar",
-    rank: 4,
+    rank: "B",
     slug: "pulsar-x2h",
     quote: "The X2H demostrates that a mouse with holes can be built to last",
   },
   {
     name: "Viper Mini",
     company: "Razer",
-    rank: 6,
+    rank: "D",
     slug: "razer-viper-mini",
     quote:
       "The Viper Mini defined a generation of lightweight budget oriented gaming mice",
