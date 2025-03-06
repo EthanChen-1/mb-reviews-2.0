@@ -49,7 +49,7 @@ export async function signUpUser(prevState: unknown, formData: FormData) {
     });
 
     await signIn("credentials", {
-      name: user.email,
+      email: user.email,
       password: plainPassword,
     });
 
