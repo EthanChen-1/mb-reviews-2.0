@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Link from "next/link";
 import React from "react";
 import { Mouse } from "@/types";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 export default function MouseCard({ mouse }: { mouse: Mouse }) {
   let row = "row-start-5";
@@ -30,8 +31,12 @@ export default function MouseCard({ mouse }: { mouse: Mouse }) {
         {mouse.rank}
       </CardHeader>
       <CardContent className="p-2 grid gap-4">
-        <Link href={`/mouse/${mouse.slug}`}>
+        <Link
+          className="flex items-center justify-between"
+          href={`/mouse/${mouse.slug}`}
+        >
           {mouse.company + " " + mouse.name}
+          <SquareArrowOutUpRight />
         </Link>
       </CardContent>
     </Card>
